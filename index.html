@@ -1,31 +1,73 @@
 <html>
 <head>
     <style>
-        .footer{
-            width: 245px;
-            color: black;
-            animation: footer 5s 2;
-            animation-direction: alternate;
-            border-radius: 5px;
-            position: relative;
-            background: red;
+        .heading{
+            border: 3px solid tomato; 
+            border-radius: 10px;
         }
-        @keyframes footer{
-            0%   {background: red; left: 0%; top: 0%;}
-            25%  {background: yellow; left: 20%; top: 0%;}
-            50%  {background: blue; left: 40%; top: 0%;}
-            75%  {background: green; left: 60%; top: 0%;}
-            100% {background: red; left: 80%; top: 0%;}
+        #my-name{
+            text-align: center; 
+            font-family: courier;
+            color: white;
+            border-radius: 5px;
+            background: #0074D9;
+            width: 260px;
+            margin-top: 10px;
+            margin-left: 41%;
+            margin-bottom: 10px;
+            -webkit-transition: width 1s;
+            transition: width 1s;
+        }
+        #my_name:hover{
+            width: 280px;
+        }
+        #discipline{
+            text-align: center;
+            margin: 0px;
+            font-family: monospace;
+        }
+        #college-name{
+            text-align: center;
+            margin: 5px;
+            font-family: monospace;
+        }
+        #contact-info{
+            text-align: center;
+            margin: 5px;
+            font-family: monospace;
+        }
+        .anchors{
+            text-decoration: none;
+            color: black;
+        }
+        .footer-style{
+            color: black;
+            border-radius: 5px;
+            text-align: center;
+            bottom: 0px;
+            background: tomato;
+            opacity: 0.7;
+        }
+        .footer-style:hover{
+            opacity: 1;
         }
     </style>
     <title>Shubham Singh</title>
-    <h1 style = "border: 3px solid tomato; border-radius: 10px; color: rgb(70, 70, 70); text-align: center; font-family: courier">Shubham <b style="color: rgb(60, 60, 60)">Singh</b></h1>
-    
+    <div class = "heading">
+        <h1 id = "my-name">Shubham Singh</h1>
+        <h5 id = "discipline">Second year undergraduate &#8226; Computer Science and Engineering</h5>
+        <h5 id = "college-name"><i>Dr. Ambedkar Institute of Techology for Handicapped, Kanpur</i></h5>
+        <h5 id = "contact-info">(+91)-8318172107 | 
+            <a class = "anchors" href = "mailto:shubhams.167@gmail.com"> <img src = "images/mail-logo.png" height = "14px" width="14px"> shubhams.167@gmail.com | </a>
+            <a class = "anchors" href = "https://www.github.com/shubhams167"> <img src = "images/github-logo.png" height = "14px" width="14px"> shubhams167 | </a>
+            <a class = "anchors" href = "https://www.linkedin.com/in/shubhams167"> <img src = "images/linkedin-logo.png" height = "14px" width="14px">  shubhams167</a></h5>
+    </div>
 </head>
 <body>
-    <div class = "footer" >
-        This page is hosted by GitHub with &hearts;
+    <div style = "height: 600px">
+        
     </div>
     
 </body>
+<footer class = "footer-style">&copy Shubham Singh</footer>
 </html>
