@@ -1,0 +1,157 @@
+html, head{
+    background: #dcdde1;
+    margin: 0;
+    padding: 0;
+}
+
+.content-box{
+    margin: 0;
+    padding: 0;
+    left: calc(100% - 95%);
+    width: 90%;
+    top: calc(100% - 40%);
+    height: 100%;
+    margin-bottom: 5%;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: absolute;
+    border: none;
+    background: #2f3640;
+}
+
+.heading{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.heading::before{
+    content: "";
+    width: 120%;
+    height: 60%;
+    background: #3498db;
+    opacity: .9;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-5deg);
+    left: -5%;
+    top: -20%;
+}
+
+.heading::after{
+    content: "";
+    width: 120%;
+    height: 60%;
+    background: #3498db;
+    opacity: .9;
+    position: absolute;
+    z-index: -2;
+    transform: skewX(-40deg) rotate(-5deg);
+    left: 60%;
+    top: -25%;
+    
+}
+
+p{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#my-name{
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    color: #2f3640;
+    cursor: default;
+    transition: .5s linear;
+}
+
+#my-name-span-1{
+    background: #2f3640;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+#discipline, #college-name{
+    margin: 10px;
+    border: none;
+    text-align: center;
+    font-family: "poppins", sans-serif;
+    font-size: .8em;
+}
+
+.contact-btn-container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-btn{
+    border: none;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    display: inline-block;
+    width: 45px;
+    height: 40px;
+    margin: 10px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #485460;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-btn i{
+    line-height: 40px;
+    font-size: 20px;
+    transition: 0.2s linear;
+}
+
+.contact-btn:hover i{
+    transform: scale(1.2);
+    color: #f1f1f1;
+}
+
+.contact-btn::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: #485460;
+    transform: rotate(45deg);
+    left: -160%;
+    top: 90%;
+}
+
+.contact-btn:hover::before{
+    animation: a 0.7s 1;
+    left: -20%;
+    top: -20%;
+}
+
+@keyframes a{
+    0%{
+        left: -160%;
+        top: 90%;
+    }
+    50%{
+        left: 10%;
+        top: -50%;
+    }
+    100%{
+        left: -20%;
+        top: -20%;
+    }
+}
