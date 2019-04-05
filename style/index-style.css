@@ -115,6 +115,8 @@ p{
 
 .contact-btn i{
     line-height: 40px;
+    text-decoration: none;
+    color: #485460;
     font-size: 20px;
     transition: 0.2s linear;
 }
@@ -133,6 +135,7 @@ p{
     transform: rotate(45deg);
     left: -160%;
     top: 90%;
+    text-decoration: none;
 }
 
 .contact-btn:hover::before{
