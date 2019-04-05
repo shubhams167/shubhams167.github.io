@@ -2,7 +2,6 @@ html, head{
     background: #dcdde1;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .content-box{
@@ -18,7 +17,6 @@ html, head{
     position: absolute;
     border: none;
     background: #2f3640;
-    z-index: -10;
 }
 
 .heading{
@@ -45,12 +43,19 @@ html, head{
     width: 120%;
     height: 60%;
     background: #3498db;
-    opacity: 1;
+    opacity: .9;
     position: absolute;
     z-index: -2;
     transform: skewX(-40deg) rotate(-5deg);
     left: 60%;
-    top: -25%;    
+    top: -25%;
+    
+}
+
+p{
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 #my-name{
@@ -58,73 +63,47 @@ html, head{
     padding: 0;
     border: none;
     font-family: 'Ubuntu', sans-serif;
+    font-size: 4em;
+    position: relative;
     text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
     color: #2f3640;
     cursor: default;
-    transition: .5s;
+    transition: .5s linear;
 }
 
 #my-name-span-1{
-    position: absolute;
-    left: 3%;
+    background: #2f3640;
     padding: 0px 10px;
-    font-size: 7em;
-    opacity: 1;
-    color: #2f3640;
     border-radius: 5px;
+    font-weight: bold;
+    color: #f1f1f1;
 }
 
-#my-name-span-2{
-    position: absolute;
-    left: 5%;
-    top: 5%;
-    padding: 0px 10px;
-    font-weight: 900;
-    font-size: 10em;
-    opacity: .2;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    color: #2f3640;
-    z-index: -1;
-}
-
-
-#discipline{
+#discipline, #college-name{
+    margin: 10px;
     border: none;
-    position: absolute;
-    top: 15%;
-    right: 5%;
+    text-align: center;
     font-family: "poppins", sans-serif;
     font-size: .8em;
-    cursor: default;
-}
-
-#college-name{
-    border: none;
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    font-family: "poppins", sans-serif;
-    font-size: .8em;
-    cursor: default;
 }
 
 .contact-btn-container{
     margin: 0;
     padding: 0;
-    position: absolute;
-    right: 4%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
 }
 
 .contact-btn{
     border: none;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2em;
     text-decoration: none;
     display: inline-block;
     width: 45px;
-    height: 45px;
+    height: 40px;
     margin: 10px;
     background: #f1f1f1;
     border-radius: 50%;
@@ -135,7 +114,7 @@ html, head{
 }
 
 .contact-btn i{
-    line-height: 45px;
+    line-height: 40px;
     text-decoration: none;
     color: #485460;
     font-size: 20px;
