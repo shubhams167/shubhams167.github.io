@@ -1,0 +1,37 @@
+#leaf-container{
+    width: 200px;
+    height: 200px;
+    border-bottom-right-radius: 35%;
+    border-top-left-radius: 35%;
+    top: 10px;
+    right: calc(50% - 100px);
+    position: absolute;
+    background: #2C3335;
+    -webkit-animation-name: popup;
+    -webkit-animation-duration: 1s;
+    animation-name: popup;
+    animation-duration: 1s;
+}
+
+#leaf{
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    background-image: url("profile-pic.jpg");
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+@-webkit-keyframes popup{
+    from {width: 0px; height: 0px}
+    to {width: 200px; height: 200px}
+}
+
+@keyframes popup{
+    from {width: 0px; height: 0px}
+    to {width: 200px; height: 200px}
+}
