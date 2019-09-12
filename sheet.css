@@ -1,11 +1,51 @@
-html{
-    display: none;
+html, body{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 div{
     margin: 10px;
+}
+
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #000;*/
+    margin: 0;
+    transition: 1s;
+}
+
+.preloader:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #000;
+    transition: 1s;
+}
+
+.preloader.complete:before{
+    left: -50%;
+}
+
+.preloader:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #000;
+    transition: 1s;
+}
+
+.preloader.complete:after{
+    right: -50%;
 }
 
 #container{
@@ -20,7 +60,7 @@ div{
     align-items: center;
 }
 
-#leaf-container{
+#pic-container{
     width: 180px;
     height: 180px;
     border-radius: 35% 0% 35% 0%;
@@ -33,7 +73,7 @@ div{
     animation-duration: 1s;
 }
 
-#leaf{
+#pic{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     border-radius: 45% 0% 45% 0%;
@@ -102,14 +142,14 @@ a:hover{
         flex-direction: column;
     }
     
-    #leaf-container, #leaf{
+    #pic-container, #leaf{
         width: 100px;
         height: 100px;
         background-size: 100px;
         margin: auto;
     }
     
-    #leaf{
+    #pic{
         width: calc(100% - 7px);
         height: calc(100% - 7px);
         margin-top: 3px;

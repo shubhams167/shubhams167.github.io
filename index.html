@@ -7,17 +7,17 @@
         <link rel = "stylesheet" href = "sheet.css" type = "text/css">
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function(){
-                $("html").show();
+            $(window).on('load', function(){
+                $('.preloader').addClass('complete');
             });
             
         </script>
     </head>
     <body>
-        
+        <div class = "preloader"></div>
         <div id = "container">
-            <div id = "leaf-container">
-                <div id = "leaf"></div>
+            <div id = "pic-container">
+                <div id = "pic"></div>
             </div>
             <div id = "info">
                 <section id = "personal-info">
