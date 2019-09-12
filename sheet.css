@@ -9,6 +9,8 @@ div{
     margin: 10px;
 }
 
+/* CSS code for preloader starts here */
+
 .preloader{
     position: fixed;
     top: 0;
@@ -47,6 +49,61 @@ div{
 .preloader.complete:after{
     right: -50%;
 }
+
+/* CSS code for preloader ends here */
+
+
+/* CSS code for preloader logo starts here */
+
+.logo{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    animation: animate 2s linear infinite;
+    z-index: 10000;
+}
+
+.logo:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    animation: animateBg 2s linear infinite;
+}
+
+@keyframes animate{
+    0%{transform: translate(-50%, -50%) rotate(0deg);}
+    25%{transform: translate(-50%, -50%) rotate(180deg);}
+    50%{transform: translate(-50%, -50%) rotate(180deg);}
+    75%{transform: translate(-50%, -50%) rotate(360deg);}
+    100%{transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@keyframes animateBg{
+    0%{height: 0%;}
+    25%{height: 0%;}
+    50%{height: 100%;}
+    75%{height: 100%;}
+    100%{height: 0%;}
+}
+
+.preloader.complete{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* CSS code for preloader logo ends here */
 
 #container{
     top: 10px;
@@ -136,6 +193,8 @@ a{
 a:hover{
     text-decoration: underline;
 }
+
+/* Page setting for smaller screens */
 
 @media only screen and (max-width: 768px) {
     #info {
