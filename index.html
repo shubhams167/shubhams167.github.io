@@ -7,8 +7,22 @@
         <link rel = "stylesheet" href = "sheet.css" type = "text/css">
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script>
+            (function($) {
+                $.fn.invisible = function() {
+                    return this.each(function() {
+                        $(this).css("visibility", "hidden");
+                    });
+                };
+                $.fn.visible = function() {
+                    return this.each(function() {
+                        $(this).css("visibility", "visible");
+                    });
+                };
+            }(jQuery));
+            
             $(window).on('load', function(){
                 $('.preloader').addClass('complete');
+                $('#container').visible();
             });
             
         </script>
