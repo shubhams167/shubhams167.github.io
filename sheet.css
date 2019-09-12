@@ -49,6 +49,9 @@ div{
     right: -50%;
 }
 
+/* CSS code for preloader ends here */
+
+
 /* CSS code for preloader logo starts here */
 
 .logo{
@@ -93,15 +96,13 @@ div{
     100%{height: 0%;}
 }
 
-/* CSS code for preloader logo ends here */
-
 .preloader.complete{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-/* CSS code for preloader ends here */
+/* CSS code for preloader logo ends here */
 
 #container{
     visibility: hidden;
@@ -134,7 +135,7 @@ div{
     height: calc(100% - 10px);
     border-radius: 45% 0% 45% 0%;
     margin: 5px 5px 5px 5px;
-    background-image: url("Images/profile-pic.jpg");
+    background-image: url("profile-pic.jpg");
     background-size: 180px;
     background-repeat: no-repeat;
 }
