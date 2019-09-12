@@ -1,5 +1,5 @@
 html{
-    font-size: 1.3vw;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -22,11 +22,9 @@ div{
 #leaf-container{
     width: 180px;
     height: 180px;
-    border-bottom-right-radius: 35%;
-    border-top-left-radius: 35%;
+    border-radius: 35% 0% 35% 0%;
     top: 10px;
     right: calc(50% - 100px);
-    position: static;
     background: #2C3335;
     -webkit-animation-name: popup;
     -webkit-animation-duration: 1s;
@@ -37,10 +35,8 @@ div{
 #leaf{
     width: calc(100% - 10px);
     height: calc(100% - 10px);
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 50%;
-    margin: 5px 5px 5px 5px;    
-    position: static;
+    border-radius: 45% 0% 45% 0%;
+    margin: 5px 5px 5px 5px;
     background-image: url("profile-pic.jpg");
     background-size: 180px;
     background-repeat: no-repeat;
@@ -57,24 +53,38 @@ div{
 }
 
 #info{
-    top: 200px;
-    left: 10px;
-    border-radius: 5px;
+    width: 100%;
+    margin: 0;
     background: white;
     color: white;
-    padding: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
+    flex-grow: 2;
 }
 
 section{
     background: #2C3335;
+}
+
+#personal-info, #other-info{
+    border-radius: 5px;
     margin: 10px;
     padding: 10px;
+}
+
+#academic, #experience, #achievements{
+    padding: 0px 10px 10px 10px;
+}
+
+h2{
+    margin: 10px 0 10px 0;
+    padding: 0px 5px 0px 5px;
+    background: white;
+    color: #2C3335;
     border-radius: 5px;
+    display: inline-block;
 }
 
 a{
@@ -90,6 +100,7 @@ a:hover{
     #info {
         flex-direction: column;
     }
+    
     #leaf-container, #leaf{
         width: 100px;
         height: 100px;
@@ -111,13 +122,5 @@ a:hover{
     @keyframes popup{
         from {width: 0px; height: 0px}
         to {width: 100px; height: 100px}
-    }
-    
-    html{
-        font-size: 3vw;
-    }
-    
-    footer{
-        font-size: 2vw;
     }
 }
