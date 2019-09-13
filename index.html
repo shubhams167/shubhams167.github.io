@@ -7,17 +7,29 @@
         <link href = "https://fonts.googleapis.com/css?family=Cinzel|Raleway|Ubuntu|Poppins" rel = "stylesheet">
         <link rel = "stylesheet" href = "sheet.css" type = "text/css">
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script>
-            $(window).on('load', function(){
-                $('.preloader').addClass('complete');
-            });
-            
-        </script>
+        
     </head>
     <body>
         <div class = "preloader">
-            <div class = "logo"></div>
+            <div class = "preloader-logo"></div>
         </div>
+        <nav>
+            <div class = "nav-logo">
+                <!-- <img src="/favicon.ico" alt="logo" /> -->
+                <h4>SHUBHAM SINGH</h4>
+            </div>
+            <ul class = "nav-ul">
+                <li><a class = "nav-ul-a" href = "#">Home</a></li>
+                <li><a class = "nav-ul-a" href = "#personal-info">About</a></li>
+                <li><a class = "nav-ul-a" href = "#experience">Experience</a></li>
+                <li><a class = "nav-ul-a" href = "#achievements">Achievements</a></li>
+            </ul>
+            <div class = "burger">
+                <div class = "line1"></div>
+                <div class = "line2"></div>
+                <div class = "line3"></div>
+            </div>
+        </nav>
         
         <div id = "container">
             <div id = "pic-container">
@@ -64,9 +76,28 @@
                     </section>
                 </section>
             </div>
-            <footer>
-                Copyright &copy; 2019 Shubham Singh. All rights reserved.
-            </footer>
         </div>
+        <footer>
+            Copyright &copy; 2019 Shubham Singh. All rights reserved.
+        </footer>
+        <script>
+            $(window).on('load', function(){
+                $('.preloader').addClass('complete');
+            });
+            
+            function navSlide(){
+                $('.nav-ul-a').bind('click', function(){
+                    $('.nav-ul').toggleClass('active');
+                    $('.nav-ul-a').toggleClass('active');
+                });
+                $('.burger').bind('click', function(){
+                    $('.nav-ul').toggleClass('active');
+                    $('.nav-ul-a').toggleClass('active');
+                    $('.burger').toggleClass('toggle');
+                });
+            };
+            
+            navSlide();
+        </script>
     </body>
 </html>
