@@ -325,15 +325,15 @@ section h6{
     
     #info{
         grid-template-areas: "about about"
-                         "personal experience"
-                         "skill academic"
-                         "certification achievement";
+                             "personal experience"
+                             "skill academic"
+                             "certification achievement";
     }
 }
 
 @media only screen and (max-width: 768px) {
     nav h4{
-        font-size: 2em;
+        font-size: 28px;
     }
     
     .nav-ul{
@@ -349,6 +349,7 @@ section h6{
         width: 50%;
         transition: 0.5s;
         padding: 0px;
+        z-index: 50;
     }
     
     .nav-ul.active{
